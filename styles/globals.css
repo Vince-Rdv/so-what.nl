@@ -1,0 +1,49 @@
+/* Load CocoGoose font */
+@font-face {
+  font-family: 'CocoGoose';
+  src: url('/CocoGoose.ttf') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+*{
+  margin:0;
+  padding:0;
+}
+
+:root{
+  --color-blue: #288DCB;
+  --color-white: #FFFFFF;
+  --color-black: #000000;
+
+  --max-width: 1200px;
+
+  --font-header: 'CocoGoose';
+  --font-body: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
+  font-family: var(--font-body);
+}
+
+h1, h2, h3, h4, h5, h6{
+  font-family: 'CocoGoose';
+  font-weight:500;
+  text-transform: uppercase;
+}
+
+h1{font-size: 2.5rem;}
+h2{font-size: 2rem;}
+h3{font-size: 1.5rem;}
+h4{font-size: 1.25rem;}
+h5{font-size: 1rem;}
+h6{font-size: 0.75rem;}
+
+body{
+  background:rgb(241, 241, 241);
+}
+
+main{
+  width:90%;
+  max-width: var(--max-width);
+  margin:0 auto;
+  margin-top:2rem;
+}
