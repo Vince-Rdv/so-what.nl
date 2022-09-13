@@ -1,0 +1,25 @@
+.event_info>*{
+    margin-bottom:1rem;
+}
+
+.header{
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    width:100%;
+}
+
+.image_container img{
+    width:100%;
+}
+
+.text_container{
+    width:100%;
+    background: var(--color-white);
+    padding: 1rem;
+}
+
+.description{
+    width:100%;
+    padding: 1rem;
+    background: var(--color-white);
+}
