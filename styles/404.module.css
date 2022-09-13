@@ -1,0 +1,16 @@
+.fourzerofour{
+    text-align: center;
+    padding-top:20vh;
+}
+
+.fourzerofour p{
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 1rem 0px;
+}
+
+.fourzerofour a{
+    color: var(--color-primary);
+    font-size: 1.5rem;
+    font-weight: 700;
+}

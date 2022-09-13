@@ -10,7 +10,7 @@ export default function Navbar(props) {
 
     return (
         <div className={styles.bar}>
-            <h1>{text}</h1>
+            <Button text={text} type="blue" />
             <Button text="Share" type="blue" />
         </div>
     )

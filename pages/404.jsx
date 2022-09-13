@@ -1,8 +1,9 @@
 import React from 'react';
 
 import Head from 'next/head';
+import Link from 'next/link';
 
-import styles from '../styles/event.module.css';
+import styles from '../styles/404.module.css';
 
 import Navbar from '../components/Navbar.jsx';
 import Sharebar from '../components/Sharebar.jsx';
@@ -18,17 +19,15 @@ export default function Index() {
 
       <Navbar />
 
-      <main>
+      <main className={styles.fourzerofour}>
 
-        <Sharebar text="Oeps!" />
-
-        <p>Oeps, hier gaat iets fout. Mocht dit probleem zich voortzetten neem contact op met info@so-what.nl</p>
+        <h1>404 page not found</h1>
+        <p>Deze pagina bestaat niet</p>
+        <Link href="/">Terug naar home</Link>
 
 
 
       </main>
-
-      <Footer />
 
     </>
   )
