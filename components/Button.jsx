@@ -8,8 +8,9 @@ export default function Button(props) {
     // Get id of button
     const type = props.type;
     const text = props.text;
+    const link = props.link;
 
     return (
-        <a href="#" className={styles[type]}>{text}</a>
+        <a href={link} className={styles[type]}>{text}</a>
     )
 }

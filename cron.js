@@ -68,9 +68,14 @@ function formatEvents(events){
 
         var internalEvent = false; //Set false as default
 
+        var highestPrice = 0;
+
         event.tickets.forEach(ticket => {
             // If any ticket is found, set internalEvent to true
             internalEvent = true;
+            if (ticket.price + ticket.webFee > highestPrice){
+                highestPrice = ticket.price + ticket.webFee;
+            }
             tempTickets.push({
                 "id": ticket.id,
                 "name": ticket.name,
@@ -107,7 +112,8 @@ function formatEvents(events){
                 "totalTicketsRemaining": event.totalTicketsRemaining,
                 "soldOut": event.soldOut,
                 "internalEvent": internalEvent,
-                "lastModification": event.modifiedAt
+                "lastModification": event.modifiedAt,
+                "highestPrice": highestPrice
             }
         }) 
     });

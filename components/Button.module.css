@@ -7,6 +7,9 @@
     text-align: center;
     margin-right:1rem;
 }
+.blue:last-of-type, .black:last-of-type, .white:last-of-type{
+    margin-right:0;
+}
 
 .blue{
     background: var(--color-blue);
