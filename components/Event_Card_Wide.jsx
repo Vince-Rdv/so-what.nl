@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Head from 'next/head';
+import Image from 'next/image'
 
 import Button from './Button.jsx';
 
@@ -30,7 +30,7 @@ export default function Index(props) {
     return (
         <article className={styles.event_card_wide}>
             <div className={styles.image}>
-                <img src={event.publicity.image} alt="header" className={styles.wallpaper} />
+                <Image layout="fill" objectFit='cover' src={event.publicity.image} alt="header" className={styles.wallpaper} />
             </div>
             <div className={styles.header}>
                 <h1>{event.publicity.title}</h1>

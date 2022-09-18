@@ -1,20 +1,23 @@
 import React from 'react'
 
+import Link from 'next/link';
+import Image from 'next/image'
+
 import styles from './Navbar.module.css'
 
 export default function Navbar() {
     return (
         <nav className={styles.nav}>
             <div>
-                <a href="/agenda">Agenda</a>
-                {/* <a href="/nieuws">Nieuws</a> */}
-                <a href="/join-us">Join Us!</a>
+                <Link href="/">Agenda</Link>
+                <Link href="/join-us">Join Us!</Link>
             </div>
-            <img className={styles.logo} src="/images/SoWhatLogoBlauw.png" alt="logo" />
+            <div className={styles.logo}>
+                <Image layout="fill" objectFit='contain' src="/images/SoWhatLogoBlauw.png" alt="logo" />
+            </div>
             <div>
-                {/* <a href="/fotos">Foto's</a> */}
-                <a href="/info">Info</a>
-                <a href="/contact">Contact</a>
+                <Link href="/info">Info</Link>
+                <Link href="/contact">Contact</Link>
             </div>
         </nav>
     )

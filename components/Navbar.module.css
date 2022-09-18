@@ -11,6 +11,10 @@
 
 .logo {
   height: 60%;
+  position: relative;
+}
+.logo img{
+  width: 100%;
 }
 
 .nav>div>a {
@@ -33,6 +37,10 @@
 
 .nav>div {
   min-width: 400px;
+}
+.nav>div.logo{
+  min-width: unset;
+  width:200px;
 }
 
 .nav>div:first-of-type{

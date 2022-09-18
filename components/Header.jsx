@@ -1,5 +1,7 @@
 import React from 'react'
 
+import Image from 'next/image'
+
 import styles from './Header.module.css'
 
 import Button from './Button.jsx'
@@ -18,7 +20,9 @@ export default function Header(props) {
 
     return (
         <header className={styles.header}>
-            <img src={event.publicity.image} alt="header" className={styles.wallpaper} />
+            <div className={styles.wallpaper}>
+                <Image layout="fill" objectFit='cover' src={event.publicity.image} alt="header" />
+            </div>
             <div className={styles.textBlock}>
                 <h2>{day} {month}</h2>
                 <h1>{event.publicity.title}</h1>

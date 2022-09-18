@@ -6,6 +6,7 @@ import useSWR from 'swr';
 const fetcher = (url) => fetch(url).then((res) => res.json());
 
 import Head from 'next/head';
+import Image from 'next/image';
 
 import styles from '../../styles/event.module.css';
 
@@ -34,6 +35,14 @@ export default function Index(props) {
                 break;
             }
         }
+
+        var startDoors = new Date(event.date.startDoors);
+        var deurOpen = startDoors.getHours() + ":" + startDoors.getMinutes();
+
+        var leeftijd = event.ageRestriction;
+        if (!leeftijd) {
+            leeftijd = "18+";
+        }
         
         return (
             <>
@@ -50,18 +59,21 @@ export default function Index(props) {
                     <div className={styles.event}>
 
                         <div className={styles.image_container}>
-                            <img src={event.publicity.image} alt="Event image" />
+                            <Image layout="fill" objectFit='cover' src={event.publicity.image} alt="Event image" />
                         </div>
 
                         <div className={styles.text_container}>
                             <div className={styles.content}>
                                 <h1>{event.publicity.title}</h1>
+                                <h1 className={styles.black}>Donderdag 26 augustus</h1>
+                                <h1>Leeftijd: {leeftijd}</h1>
+                                <h1>Deur open: {deurOpen}</h1>
                             </div>
                         </div>
 
                         <div className={styles.description}>
                             <div className={styles.content}>
-                                <h2>Event beschrijving</h2>
+                                <h2>Beschrijving</h2>
                                 <p>{event.publicity.description}</p>
                             </div>
                         </div>
@@ -73,8 +85,7 @@ export default function Index(props) {
                         <div className={styles.info}>
                             <div className={styles.content}>
                                 <h2>Extra informatie</h2>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum modi, porro aperiam iusto saepe alias itaque eveniet, velit exercitationem incidunt, error doloribus provident dignissimos similique reprehenderit doloremque? Voluptates, assumenda debitis.</p>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam dignissimos quod qu</p>
+                                <p>Wat hier precies gaat komen weten we nog niet zo zeer. In ieder geval de bekropte versie van de huisregels (denk niet roken enzo). Daarnaast mogelijk wat extra informatie bij speciale evenementen zoals CBI en eetcafe&apos;s</p>
                             </div>
                         </div>
 
