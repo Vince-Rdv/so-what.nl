@@ -22,7 +22,7 @@ export default function Index(props) {
     const { data, error } = useSWR('/api/upcommingEvents', fetcher);
 
     if (error) return <div>failed to load</div>
-    if (!data) return <div>loading...</div>
+    if (!data) return null;
 
     if (data) {
 
@@ -43,11 +43,21 @@ export default function Index(props) {
         if (!leeftijd) {
             leeftijd = "18+";
         }
+
+        var descriptionTemp = event.publicity.description;
+        descriptionTemp = descriptionTemp.split("\n");
+        
+        var description = [];
+        for (var i = 0; i < descriptionTemp.length; i++) {
+            description.push(<p>{descriptionTemp[i]}</p>);
+        }
+
         
         return (
             <>
                 <Head>
                     <title>So What! - Home</title>
+                    <meta name="viewport" content="width=device-width, initial-scale=1" />
                 </Head>
 
                 <Navbar />
@@ -74,7 +84,7 @@ export default function Index(props) {
                         <div className={styles.description}>
                             <div className={styles.content}>
                                 <h2>Beschrijving</h2>
-                                <p>{event.publicity.description}</p>
+                                <p>{description}</p>
                             </div>
                         </div>
 

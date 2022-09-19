@@ -8,7 +8,7 @@
     grid-template-rows: auto auto auto;
     background: var(--color-white);
     height: 300px;
-    margin-bottom:2rem;
+    margin-bottom: 2rem;
 }
 
 .image {
@@ -49,19 +49,71 @@
     padding: 0px 1rem;
     padding-bottom: 1rem;
 }
-.footer h1{
+
+.footer h1 {
     font-size: 2rem;
     text-transform: uppercase;
     color: var(--color-blue);
-    margin-left:auto;
+    margin-left: auto;
 }
 
 
 
 
-.image{
+.image {
     position: relative;
 }
-.image img{
+
+.image img {
     object-fit: cover;
+}
+
+
+
+
+
+/* Smaller than 1000px */
+@media (max-width: 1000px) {
+    .event_card_wide {
+        grid-template-areas:
+            "image"
+            "header"
+            "description"
+            "footer";
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto auto;
+        height: auto;
+        width: 100%;
+    }
+
+    .image {
+        height: 200px;
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+    .wallpaper {
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .header {
+        padding: 0.25rem 1rem;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .description {
+        padding: 1rem;
+    }
+
+    .footer {
+        flex-direction: column-reverse;
+        align-items: flex-start;
+    }
+
+    .footer h1 {
+        margin-left: 0;
+        margin-bottom:1rem;
+    }
 }

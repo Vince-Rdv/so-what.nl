@@ -12,15 +12,15 @@ export default function Index(props) {
 
     var eventDate = new Date(event.date.startDoors);
     var month = eventDate.toLocaleString('default', { month: 'short' });
-    month = month.replace(".", "");	
+    month = month.replace(".", "");
     var day = eventDate.getDate();
 
     var price = "€ " + (event.other.highestPrice / 100).toFixed(2);
 
-    if(event.other.highestPrice == 0){
+    if (event.other.highestPrice == 0) {
         price = "Gratis";
     }
-    if(!event.other.internalEvent){
+    if (!event.other.internalEvent) {
         price = "";
     }
 
@@ -41,8 +41,10 @@ export default function Index(props) {
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam modi nam qui dolorum dolor, neque ipsam placeat! Animi, a! Iste, inventore corporis. Sunt numquam reprehenderit ducimus veniam quae, dolore ipsam.</p>
             </div>
             <div className={styles.footer}>
-                <Button type="blue" text="Meer info" link={infoLink} />
-                <Button type="black" text="Tickets" link={ticketLink} />
+                <div className={styles.buttons}>
+                    <Button type="blue" text="Meer info" link={infoLink} />
+                    <Button type="black" text="Tickets" link={ticketLink} />
+                </div>
                 <h1>{price}</h1>
             </div>
         </article>

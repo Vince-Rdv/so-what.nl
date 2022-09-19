@@ -1,9 +1,41 @@
-.footer{
-    background: var(--color-black);
+.footer {
     padding: 1rem;
     text-align: center;
+    background: var(--color-white);
+    border-top: 0.25rem solid var(--color-blue);
 }
 
-.footer p{
-    color: white;
+.socials {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom:1rem;
+}
+
+.socialLink svg {
+    width: 2rem;
+    height: 2rem;
+    padding: 0.5rem;
+}
+
+.socialLink path {
+    fill: var(--color-blue);
+}
+
+.links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.links a {
+    color: var(--color-blue);
+    text-decoration: none;
+}
+
+.copyright {
+    margin-top: 2rem;
+    color: var(--color-black);
 }

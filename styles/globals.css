@@ -38,7 +38,8 @@ h5{font-size: 1rem;}
 h6{font-size: 0.75rem;}
 
 body{
-  background:rgb(241, 241, 241);
+  background:rgb(226, 226, 226);
+  overflow-x: hidden;
 }
 
 main{
