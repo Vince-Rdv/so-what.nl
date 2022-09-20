@@ -169,4 +169,7 @@ function getEventsFromStager(urlParameters, myCallback) {
     https.request(options, callback).end();
 }
 
+setInterval(function () {
+    syncEvents();
+}, 1000 * 60 * 15);
 syncEvents();
