@@ -1,0 +1,25 @@
+.navContainerOpen {
+    background: var(--color-blue) !important;
+}
+
+.navContainerOpen img {
+    /* Turn from #288DCB to full white */
+    filter: grayscale(100%) brightness(0) invert(1);
+}
+
+.navContainerOpen #mobileButton {
+    /* Turn from #288DCB to full white */
+    filter: grayscale(100%) brightness(0) invert(1);
+}
+
+.navContainerOpen #mobileButton>div:nth-last-of-type(1) {
+    transform: translateX(-0.75rem) rotate(45deg) translateY(-1.1rem);
+}
+
+.navContainerOpen #mobileButton>div:nth-last-of-type(2) {
+    opacity: 0;
+}
+
+.navContainerOpen #mobileButton>div:nth-last-of-type(3) {
+    transform: translateX(-0.75rem) rotate(-45deg) translateY(1.1rem);
+}

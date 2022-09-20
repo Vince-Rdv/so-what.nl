@@ -17,7 +17,7 @@ export default function Index() {
   const { data, error } = useSWR('/api/upcommingEvents', fetcher);
 
   if (error) return <div>failed to load</div>
-  if (!data) return <div>loading...</div>
+  if (!data) return null
   
   if(data){
 
@@ -49,6 +49,15 @@ export default function Index() {
           highestId = event.id;
           highlightedEvent = event;
         }
+      }
+    }
+
+    // Dev, set highlightedEvent to event with id 660387
+    for(var i = 0; i < eventsData.length; i++){
+      var event = eventsData[i];
+      if(event.id == 660387){
+        highlightedEvent = event;
+        break;
       }
     }
 

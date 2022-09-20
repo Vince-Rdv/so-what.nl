@@ -12,6 +12,7 @@ import styles from '../../styles/event.module.css';
 
 import Navbar from '../../components/Navbar.jsx';
 import Sharebar from '../../components/Sharebar.jsx';
+import Button from '../../components/Button.jsx';
 import Footer from '../../components/Footer.jsx';
 
 export default function Index(props) {
@@ -55,6 +56,21 @@ export default function Index(props) {
             description.push(<p>{descriptionTemp[i]}</p>);
         }
 
+        var ticketText = "";
+
+        for(var x = 0; x < event.tickets.length; x++) {
+            if(event.tickets[x].price > 0){
+                if(ticketText.length > 0){
+                    ticketText += " - ";
+                }
+                ticketText += event.tickets[x].name + " €" + (event.tickets[x].price / 100).toFixed(2) + " ";
+            }
+        }
+        if(ticketText == "") {
+            ticketText = "Gratis";
+        }
+
+        var ticketLink = "/tickets/" + event.id;
         
         return (
             <>
@@ -82,6 +98,11 @@ export default function Index(props) {
                                 <h1>Leeftijd: {leeftijd}</h1>
                                 <h1>Deur open: {deurOpen}</h1>
                             </div>
+                        </div>
+
+                        <div className={styles.cta}>
+                            <p>{ticketText}</p>
+                            <Button text="Tickets" link={ticketLink} type="white"/>
                         </div>
 
                         <div className={styles.description}>

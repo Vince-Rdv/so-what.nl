@@ -112,7 +112,7 @@ export default function Index() {
                                                 <td>SM58 8x SM57 5x Sennheiser: Md 421-u-4 7x E604 3x AKG: C451B 2x D112 Beyer Dynamic:M 201n 2x</td>
                                             </tr>
                                             <tr>
-                                                <td>DI's</td>
+                                                <td>DI&apos;s</td>
                                                 <td>Countryman type 85 (Active) 6x</td>
                                             </tr>
                                             <tr>
@@ -149,7 +149,7 @@ export default function Index() {
                                                 <td></td>
                                             </tr>
                                             <tr>
-                                                <td>Extra's</td>
+                                                <td>Extra&apos;s</td>
                                             </tr>
                                             <tr>
                                                 <td>Spiegelbol</td>

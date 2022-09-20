@@ -41,10 +41,12 @@ export default function Index() {
 
                         <h2>Bekende problemen:</h2>
                         <ul>
+                            <li>Evenementen worden vanaf openingsfeest alsnog gezien, ook al zijn deze al geweest. Dit om de evenementenlijst wat langer te maken, om eventuele problemen tegen te komen</li>
                             <li>Homepagina evenementen hebben lorem ipsum neptekst, dit is vanwege dat ik samen met marketing nog geen concreet plan heb hoe deze gevuld gaat worden vanuit de beschrijvingen, en deze nu dus chaotisch vol zou raken</li>
                             <li>Footer (dat ding beneden) komt verder omhoog wanneer de pagina niet hoog genoeg is, wat je mogelijk ziet op deze pagina</li>
                             <li>Knoppen om de header in de homepage (grote foto met evenement) zijn niet altijd goed leesbaar (ligt aan evenement)</li>
-                            <li>Evenementenpagina's hebben een wat vreemde indeling, dit is bewust gedaan om te laten zien wat er mogelijk is. Uiteraard wordt bijvoorbeeld de 8 bit christmas video vervangen met een eventuele video van de band, een foto van een vorige editie of iets totaal anders, liggend aan het evenement</li>
+                            <li>Evenementenpagina&quot;s hebben een wat vreemde indeling, dit is bewust gedaan om te laten zien wat er mogelijk is. Uiteraard wordt bijvoorbeeld de 8 bit christmas video vervangen met een eventuele video van de band, een foto van een vorige editie of iets totaal anders, liggend aan het evenement</li>
+                            <li>Header is standaard Zoete Zin, dit wegens dat op dit moment de afbeeldingen standaard nog vaak tekst e.d. bevatten, en hierdoor de knoppen niet goed uitkomen. Zoete zin heeft een foto waar deze knoppen beter uitkomen. Hier wordt uiteraard nog mee geexperimenteerd</li>
                         </ul>
 
                     </div>

@@ -68,6 +68,7 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    height: 4rem;
 }
 
 .cta::after, .cta::before {
@@ -75,7 +76,7 @@
     content: "";
     background-color: var(--color-blue);
     width: 100vw;
-    height: 105px;
+    height: 8rem;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
@@ -127,7 +128,7 @@
 /* Smaller than 1000px */
 @media (max-width: 1000px) {
     .grid {
-        grid-template-columns: repeat(1, 1fr) !important;
+        grid-template-columns: repeat(2, 1fr) !important;
     }
 
     .block {
@@ -135,7 +136,7 @@
     }
 
     .block.small, .block.large {
-        grid-column: span 1 !important;
+        grid-column: span 2 !important;
     }
 }
 
@@ -164,4 +165,29 @@ table.table tbody tr td {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 1rem;
+}
+
+/* Smaller than 750px, CTA */
+@media (max-width: 750px) {
+    .cta {
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-end;
+    }
+    .cta h2{
+        margin-right: 0rem;
+    }
+    .cta a{
+        margin-top: 1rem;
+    }
+}
+
+/* Smaller than 600px Commisies */
+@media (max-width: 600px) {
+    .commissies {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .block>h1{
+        font-size: 1.5rem;
+    }
 }

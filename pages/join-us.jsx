@@ -50,7 +50,7 @@ export default function Index() {
                     <div className={`${styles.block} ${styles.small}`}>
                         <h1>Word nu lid van twee poppodia!</h1>
 
-                        <p>Geintje natuurlijk, dit doen we niet meer. Dit blokje is er nu puur als filler tekst. Uiteraard kan deze verwijderd worden. Dit blokje kan ook weg, hierdoor wordt het blokje "Lidmaatschap" breder</p>
+                        <p>Geintje natuurlijk, dit doen we niet meer. Dit blokje is er nu puur als filler tekst. Uiteraard kan deze verwijderd worden. Dit blokje kan ook weg, hierdoor wordt het blokje Lidmaatschap breder</p>
 
                     </div>
 
@@ -85,7 +85,7 @@ export default function Index() {
                         <p>Wil je liever minder in de spotlight staan en hou je van live-muziek? We zoeken ook vrijwilligers die ons willen helpen met het koken voor de bands! Elke vrijdag mag jij een gezonde hap neerzetten voor bandleden en techniek. Als jij een act ziet die je helemaal te gek lijkt om samen mee te eten en voor te koken, stuur dan een mailtje naar programmering@so-what.nl</p>
 
                         <h2>Andere taken</h2>
-                        <p>Denk je nou, koken of tappen lijkt me niks. Maar ik kan wel andere dingen? Laat ons dit weten! Zo zoeken we bijvoorbeeld mensen die het leuk lijken om de magische tosti's in de nacht te bouwen. Stuur een mailtje naar info@so-what.nl</p>
+                        <p>Denk je nou, koken of tappen lijkt me niks.Maar ik kan wel andere dingen?Laat ons dit weten!Zo zoeken we bijvoorbeeld mensen die het leuk lijken om de magische tosti&apos;s in de nacht te bouwen. Stuur een mailtje naar info@so-what.nl</p>
 
                     </div>
 
@@ -108,21 +108,21 @@ export default function Index() {
                             <div><h2>Barcommissie</h2>
                                 <p>De coördinatoren van de bar. Zij zorgen voor de ondersteuning van de tappers en beheren de drankvoorraad.</p></div>
                             <div><h2>B-food</h2>
-                                <p>Ook wel bekend als de tosti-helden. Op de zaterdagavond zorgen zij voor de vettige hap van tosti's en pizza's.</p></div>
-                            <div><h2>DJ's</h2>
-                                <p>Onze groep met huisDJ's. Tijdens onze eigen zaterdag avonden veel te zien achter de mixers en achter de schermen verantwoordelijk voor eigen producties en vette feesten.</p></div>
+                                <p>Ook wel bekend als de tosti-helden. Op de zaterdagavond zorgen zij voor de vettige hap van tosti&apos; s en pizza&apos; s.</p></div>
+                            <div><h2>DJ&apos;s</h2>
+                                <p>Onze groep met huisDJ&apos;s. Tijdens onze eigen zaterdag avonden veel te zien achter de mixers en achter de schermen verantwoordelijk voor eigen producties en vette feesten.</p></div>
                             <div><h2>Eetcafé</h2>
                                 <p>De organisatie achter ons gezellige caféetje op de zondag waar je voor een klein bedrag kan smullen van een heerlijk vers drie-gangen diner.</p></div>
                             <div><h2>Feestcommissie</h2>
                                 <p>De kunstenaars van de thema-feesten. Zij zorgen voor de aankleding van het pand en veranderen So What! in een sprookjes wereld uit Wonderland of een echt horrorhuis zo uit een zombiefilm geplukt</p></div>
                             <div><h2>ICT</h2>
-                                <p>Al onze eigen online systemen worden onderhouden door de helden van de ICT. Zonder hun geen website, kassa's of pinapparaten.</p></div>
+                                <p>Al onze eigen online systemen worden onderhouden door de helden van de ICT. Zonder hun geen website, kassa&apos;s of pinapparaten.</p></div>
                             <div><h2>Marketing</h2>
                                 <p>Van posters tot teksten schrijven. Alles wordt door de medewerkers van de marketing in elkaar gezet - Ja, zelfs deze tekst.</p></div>
                             <div><h2>Licht- en geluidstechniek</h2>
                                 <p>Onze handige jongens van de techniek zorgen voor het beste geluid en de mooiste lichtshows.</p></div>
                             <div><h2>Programmering</h2>
-                                <p>Verantwoordelijk voor de invulling van ons programma, maar ook op de vrijdag aanwezig om voor de band's te koken en ze te ondersteunen. Zo maken zij elke avond prachtig van begin tot eind.</p></div>
+                                <p>Verantwoordelijk voor de invulling van ons programma, maar ook op de vrijdag aanwezig om voor de band&apos;s te koken en ze te ondersteunen. Zo maken zij elke avond prachtig van begin tot eind.</p></div>
                             <div><h2>Technische dienst</h2>
                                 <p>Zonder hun zou ons pand letterlijk uit elkaar vallen. Van het slopen van een rookhok tot het creëeren van een douche op de dansvloer. Deze jongens kunnen het allemaal.</p></div>
                         </div>
