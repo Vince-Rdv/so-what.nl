@@ -25,10 +25,25 @@ function syncEvents() {
 
         eventData = stageEvents(eventData);
 
+        eventData = sortEvents(eventData)
+
         fs.writeFileSync(__dirname + "/sw_data/events_upcomming.json", JSON.stringify(eventData));
 
         console.log(eventData.length + " events synced");
     });
+}
+
+function sortEvents(eventData){
+    // Sort events on eventData[x].date.startDoors
+    eventData = eventData.sort((a, b) => {
+        var a = new Date(a.date.startDoors);
+        var b = new Date(b.date.startDoors);
+        a = a.getTime();
+        b = b.getTime();
+        return a - b
+    });
+
+    return eventData
 }
 
 function stageEvents(newData){
