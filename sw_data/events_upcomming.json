@@ -425,10 +425,10 @@
         "other": {
             "status": "FINAL",
             "type": "Food",
-            "totalTicketsRemaining": 17,
+            "totalTicketsRemaining": 7,
             "soldOut": false,
             "internalEvent": true,
-            "lastModification": "2022-08-28T19:03:49+02:00",
+            "lastModification": "2022-09-20T10:33:10+02:00",
             "highestPrice": 1350
         }
     },
@@ -478,10 +478,10 @@
         "other": {
             "status": "FINAL",
             "type": "Concert",
-            "totalTicketsRemaining": 246,
+            "totalTicketsRemaining": 242,
             "soldOut": false,
             "internalEvent": true,
-            "lastModification": "2022-07-22T18:18:50+02:00",
+            "lastModification": "2022-09-19T20:30:40+02:00",
             "highestPrice": 1300
         }
     },
@@ -724,7 +724,7 @@
         "id": 621388,
         "publicity": {
             "title": "Destination Unknown Afterparty",
-            "subtitle": "Wees de de stripheld van je dromen!",
+            "subtitle": "Wees de stripheld van je dromen!",
             "description": "Altijd al in de huid willen kruipen van Kuifje of Wonder Woman? Kom dan op za 8 oktober het DU-spel feestelijk afsluiten als je favoriete stripheld in So What!. \n\nDe deuren gaan open om 22:30. Tussen 23:00 en 01:00 gaat het gerstenat voor een prikkie over de toonbank. \n\nDurf je niet alleen? Kom dan met iemand als stripduo! Wij en de andere feestbeesten kijken al reikhalzend uit naar jullie outfits!\n\n---\n\n*Let op! Dit is een 18+ event. Deuren sluiten om 00:00*",
             "image": "https://so-what.stager.nl/images/118/eventpublicationitem/891246/rsz_web_flitsjacht_2-5772.jpg"
         },
@@ -754,7 +754,7 @@
         ],
         "date": {
             "startDoors": "2022-10-08T22:30:00+02:00",
-            "startEvent": "2022-10-08T22:00:00+02:00",
+            "startEvent": "2022-10-08T17:00:00+02:00",
             "endDoors": "00:00",
             "endEvent": "2022-10-09T06:00:00+02:00"
         },
@@ -764,7 +764,7 @@
             "totalTicketsRemaining": 418,
             "soldOut": false,
             "internalEvent": true,
-            "lastModification": "2022-09-17T21:42:50+02:00",
+            "lastModification": "2022-09-20T20:07:24+02:00",
             "highestPrice": 500
         }
     },
@@ -1270,9 +1270,9 @@
     {
         "id": 642130,
         "publicity": {
-            "title": "30+ feest!!",
+            "title": "30+ Feest!!",
             "subtitle": "// Omdat het weer kan!! ",
-            "description": "We gaan weer, je mag weer, we gaan los! Alles kan 19 november in So What! Als je maar in 1992 of eerder geboren bent! Duik je de ballenbak in? Of waag je een dansje in de zwoele, dampende discoshow? Een rustig speciaalbiertje in de hal drinken kan uiteraard ook! \n\nBespied je mede-dertigers op dit avondje waar ze de remmen losgooien en laat zelf ook de teugels vieren. Geniet van een heerlijke cocktail en word de volgende ochtend wakker met een schorre keel, een ouderwetse kater en besef \"ik heb dat nog nooit gedaan\" of toch wel?! Natuurlijk, je bent niet voor niets voor niets 30.\n\nElke partner of beste vriend die wordt vergeten in de ballenbak moet de volgende dag helpen schoonmaken",
+            "description": "We gaan weer, je mag weer, we gaan los! Alles kan 19 november in So What! Als je maar in 1992 of eerder geboren bent (en iets later mag stiekem ook)! Duik je de ballenbak in? Of waag je een dansje in de zwoele, dampende discoshow? Een rustig speciaalbiertje in de hal drinken kan uiteraard ook! \n\nBespied je mede-dertigers op dit avondje waar ze de remmen losgooien en laat zelf ook de teugels vieren. Geniet van een heerlijke cocktail en word de volgende ochtend wakker met een schorre keel, een ouderwetse kater en besef \"ik heb dat nog nooit gedaan\" of toch wel?! Natuurlijk, je bent niet voor niets voor niets 30.\n\nElke partner of beste vriend die wordt vergeten in de ballenbak moet de volgende dag helpen schoonmaken",
             "image": "https://so-what.stager.nl/images/118/eventpublicationitem/916403/rsz_3web_30--c13b.jpg"
         },
         "venue": {
@@ -1303,10 +1303,10 @@
         "other": {
             "status": "FINAL",
             "type": "Eigen Special (Dance)",
-            "totalTicketsRemaining": 403,
+            "totalTicketsRemaining": 385,
             "soldOut": false,
             "internalEvent": true,
-            "lastModification": "2022-09-15T22:45:07+02:00",
+            "lastModification": "2022-09-19T21:02:23+02:00",
             "highestPrice": 3750
         }
     },
@@ -1542,6 +1542,135 @@
             "internalEvent": false,
             "lastModification": "2022-06-20T12:04:04+02:00",
             "highestPrice": 0
+        }
+    },
+    {
+        "id": 609064,
+        "publicity": {
+            "title": "Popronde",
+            "subtitle": "Het beste aanstormende talent van Nederland ",
+            "description": "Het grootste rondreizende festival van Nederland komt op zondag 2 oktober naar Gouda.\nGa mee op muzikale ontdekkingstocht langs toffe locaties in het centrum van jouw stad en laat je verrassen door de muziek van de Popronde acts.\n\nPopronde toert van 10 september tot en met 3 december als karavaan met 100 talentvolle acts door het hele land. Grote namen als De Staat, Jeangu Macrooy, The Vices, Wies, EUT, Chef’Special, CUT, Froukje, MEAU en Jay-Way toerden voor ze doorbraken ook mee met de Popronde!\n\n*Popronde is gratis toegankelijk.* \n\nLineup  voor de optredens in So What! volgt \n",
+            "image": "https://so-what.stager.nl/images/118/eventpublicationitem/877367/rsz_popronde_2022-b52b.jpg"
+        },
+        "venue": {
+            "id": 921,
+            "name": "So What!",
+            "address": "Vest 30",
+            "zipcode": "2801 VE",
+            "city": "Gouda"
+        },
+        "tickets": [
+            {
+                "id": 8822622,
+                "name": "Free Ticket",
+                "price": 0
+            }
+        ],
+        "date": {
+            "startDoors": "2022-10-02T15:00:00+02:00",
+            "startEvent": "2022-10-02T13:00:00+02:00",
+            "endDoors": "00:00",
+            "endEvent": "2022-10-02T21:00:00+02:00"
+        },
+        "other": {
+            "status": "FINAL",
+            "type": "Concert",
+            "totalTicketsRemaining": 248,
+            "soldOut": false,
+            "internalEvent": true,
+            "lastModification": "2022-09-20T11:50:47+02:00",
+            "highestPrice": 0
+        }
+    },
+    {
+        "id": 609212,
+        "publicity": {
+            "title": "Ouwe Goudse Festival",
+            "subtitle": "Tijd voor de 11e editie!",
+            "description": "De vorige 10 edities waren al een succes dus dan kan het niet anders zijn dat de 11de editie keihard gaat rocken!\n\nOok dit jaar zullen vele Goudse muzikanten het podium betreden:\n\n* Captain Famous\n* The Dutch Knockoffs\n* Random Monday\n* Wraith\n* Concrete Couch Surfers\n* Dark Roses\n* The Left Overs\n* Touchdown\n* 4 Minutes Left\n* Phrase.\n* Fairground Revolution\n* Champs of the Amps\n* BandAge\n* Barre Tijden\n* Beyond Repair\n* Sportclub de Volharding\n* Kelvin\n* Out Of Office\n* Slice of Merlin\n* Settle 4 Nothing\n* Mutt Dog County\n* Bad to the Bone\n\nEn zoals elk jaar weer is de **toegang gratis!**\n\n---\n\n#popuniemusicsupport #gouda_pot",
+            "image": "https://so-what.stager.nl/images/118/eventpublicationitem/877515/rsz_web_ouwegoudse-fc1e.jpg"
+        },
+        "venue": {
+            "id": 921,
+            "name": "So What!",
+            "address": "Vest 30",
+            "zipcode": "2801 VE",
+            "city": "Gouda"
+        },
+        "tickets": [
+            {
+                "id": 8818112,
+                "name": "Free Ticket",
+                "price": 0
+            }
+        ],
+        "date": {
+            "startDoors": "2022-10-15T12:30:00+02:00",
+            "startEvent": "2022-10-15T11:00:00+02:00",
+            "endDoors": "00:00",
+            "endEvent": "2022-10-16T02:00:00+02:00"
+        },
+        "other": {
+            "status": "FINAL",
+            "type": "Festival",
+            "totalTicketsRemaining": 400,
+            "soldOut": false,
+            "internalEvent": true,
+            "lastModification": "2022-09-20T11:49:28+02:00",
+            "highestPrice": 0
+        }
+    },
+    {
+        "id": 639571,
+        "publicity": {
+            "title": "Halloween: Spookjesbos",
+            "subtitle": "Once Upon A Nightmare",
+            "description": "> *Er was eens een betoverende plek, met een magische sluier over het land van geluk en samenhorigheid. Dier en mens leefde in vrede samen en alles was goed.\n> Maar op een dag veranderde alles...*\n\n### Welkom in het Spookjesbos. \nWe brengen je nachtmerries tot leven en jagen je de stuipen op het lijf. Niemand ontkomt aan de kwaadaardige magie die heerst.\n\nBen jij verkleed als een van de beesten uit het bos? Dan kan jij veilig door de poorten en mag je *gratis* naar binnen.\n\n---\n\n*Deuren sluiten om 00:00. Leden kunnen tot 01:00 naar binnen.*\n\n**18+**",
+            "image": "https://so-what.stager.nl/images/118/eventpublicationitem/913634/rsz_sprookjesbos_banner-c4c0.jpg"
+        },
+        "venue": {
+            "id": 921,
+            "name": "So What!",
+            "address": "Vest 30",
+            "zipcode": "2801 VE",
+            "city": "Gouda"
+        },
+        "tickets": [
+            {
+                "id": 8777772,
+                "name": "Regulier",
+                "price": 500
+            },
+            {
+                "id": 8777773,
+                "name": "Medewerker (Guest)",
+                "price": 0
+            },
+            {
+                "id": 8817331,
+                "name": "Free Ticket",
+                "price": 0
+            },
+            {
+                "id": 8817332,
+                "name": "Leden",
+                "price": 300
+            }
+        ],
+        "date": {
+            "startDoors": "2022-10-29T22:30:00+02:00",
+            "startEvent": "2022-10-29T22:00:00+02:00",
+            "endDoors": "00:00",
+            "endEvent": "2022-10-30T04:00:00+01:00"
+        },
+        "other": {
+            "status": "FINAL",
+            "type": "Themafeest",
+            "totalTicketsRemaining": 420,
+            "soldOut": false,
+            "internalEvent": true,
+            "lastModification": "2022-09-20T20:04:29+02:00",
+            "highestPrice": 500
         }
     }
 ]

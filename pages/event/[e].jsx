@@ -35,6 +35,9 @@ export default function Index(props) {
                 break;
             }
         }
+        if(!event) {
+            return null;
+        }
 
         var startDoors = new Date(event.date.startDoors);
         var deurOpen = startDoors.getHours() + ":" + startDoors.getMinutes();
