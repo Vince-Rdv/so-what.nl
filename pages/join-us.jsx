@@ -102,19 +102,30 @@ export default function Index() {
 
                         <p>Bij So What! hebben wij alle verschillende taken verdeeld over verschillende commissies. Hieronder een klein overzichtje met wat voor leuks So What! te bieden heeft.</p>
 
-                        <ul>
-                            <li><b>Algemeen</b> - Als algemeen medewerker ben je te vinden in je blauwe polo als aanspreekpunt voor de bezoekers. Je bent de gastheer of vrouw op de avond zelf.</li>
-                            <li><b>Barcommissie</b> - De coördinatoren van de bar. Zij zorgen voor de ondersteuning van de tappers en beheren de drankvoorraad.</li>
-                            <li><b>B-food</b> - Ook wel bekend als de tosti-helden. Op de zaterdagavond zorgen zij voor de vettige hap van tosti's en pizza's.</li>
-                            <li><b>DJ's</b> - Onze groep met huisDJ's. Tijdens onze eigen zaterdag avonden veel te zien achter de mixers en achter de schermen verantwoordelijk voor eigen producties en vette feesten.</li>
-                            <li><b>Eetcafé</b> - De organisatie achter ons gezellige caféetje op de zondag waar je voor een klein bedrag kan smullen van een heerlijk vers drie-gangen diner.</li>
-                            <li><b>Feestcommissie</b> - De kunstenaars van de thema-feesten. Zij zorgen voor de aankleding van het pand en veranderen So What! in een sprookjes wereld uit Wonderland of een echt horrorhuis zo uit een zombiefilm geplukt</li>
-                            <li><b>ICT</b> - Al onze eigen online systemen worden onderhouden door de helden van de ICT. Zonder hun geen website, kassa's of pinapparaten.</li>
-                            <li><b>Marketing</b> - Van posters tot teksten schrijven. Alles wordt door de medewerkers van de marketing in elkaar gezet - Ja, zelfs deze tekst.</li>
-                            <li><b>Licht- en geluidstechniek</b> - Onze handige jongens van de techniek zorgen voor het beste geluid en de mooiste lichtshows.</li>
-                            <li><b>Programmering</b> - Verantwoordelijk voor de invulling van ons programma, maar ook op de vrijdag aanwezig om voor de band's te koken en ze te ondersteunen. Zo maken zij elke avond prachtig van begin tot eind.</li>
-                            <li><b>Technische dienst</b> - Zonder hun zou ons pand letterlijk uit elkaar vallen. Van het slopen van een rookhok tot het creëeren van een douche op de dansvloer. Deze jongens kunnen het allemaal.</li>
-                        </ul>
+                        <div className={styles.commissies}>
+                            <div><h2>Algemeen</h2>
+                                <p>Als algemeen medewerker ben je te vinden in je blauwe polo als aanspreekpunt voor de bezoekers. Je bent de gastheer of vrouw op de avond zelf.</p></div>
+                            <div><h2>Barcommissie</h2>
+                                <p>De coördinatoren van de bar. Zij zorgen voor de ondersteuning van de tappers en beheren de drankvoorraad.</p></div>
+                            <div><h2>B-food</h2>
+                                <p>Ook wel bekend als de tosti-helden. Op de zaterdagavond zorgen zij voor de vettige hap van tosti's en pizza's.</p></div>
+                            <div><h2>DJ's</h2>
+                                <p>Onze groep met huisDJ's. Tijdens onze eigen zaterdag avonden veel te zien achter de mixers en achter de schermen verantwoordelijk voor eigen producties en vette feesten.</p></div>
+                            <div><h2>Eetcafé</h2>
+                                <p>De organisatie achter ons gezellige caféetje op de zondag waar je voor een klein bedrag kan smullen van een heerlijk vers drie-gangen diner.</p></div>
+                            <div><h2>Feestcommissie</h2>
+                                <p>De kunstenaars van de thema-feesten. Zij zorgen voor de aankleding van het pand en veranderen So What! in een sprookjes wereld uit Wonderland of een echt horrorhuis zo uit een zombiefilm geplukt</p></div>
+                            <div><h2>ICT</h2>
+                                <p>Al onze eigen online systemen worden onderhouden door de helden van de ICT. Zonder hun geen website, kassa's of pinapparaten.</p></div>
+                            <div><h2>Marketing</h2>
+                                <p>Van posters tot teksten schrijven. Alles wordt door de medewerkers van de marketing in elkaar gezet - Ja, zelfs deze tekst.</p></div>
+                            <div><h2>Licht- en geluidstechniek</h2>
+                                <p>Onze handige jongens van de techniek zorgen voor het beste geluid en de mooiste lichtshows.</p></div>
+                            <div><h2>Programmering</h2>
+                                <p>Verantwoordelijk voor de invulling van ons programma, maar ook op de vrijdag aanwezig om voor de band's te koken en ze te ondersteunen. Zo maken zij elke avond prachtig van begin tot eind.</p></div>
+                            <div><h2>Technische dienst</h2>
+                                <p>Zonder hun zou ons pand letterlijk uit elkaar vallen. Van het slopen van een rookhok tot het creëeren van een douche op de dansvloer. Deze jongens kunnen het allemaal.</p></div>
+                        </div>
                         <p>Ben jij enthousiast geworden en lijkt het je leuk te helpen bij een van deze groepen? Klik dan op bovenstaande link en stuur een mailtje naar ons!</p>
 
                     </div>

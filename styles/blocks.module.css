@@ -75,7 +75,7 @@
     content: "";
     background-color: var(--color-blue);
     width: 100vw;
-    height:105px;
+    height: 105px;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
@@ -137,4 +137,31 @@
     .block.small, .block.large {
         grid-column: span 1 !important;
     }
+}
+
+/* Tables */
+
+table.table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    margin-bottom: 1rem;
+}
+
+table.table thead tr th {
+    border-bottom: 1px solid #ddd;
+    padding: 0.5rem;
+}
+
+table.table tbody tr td {
+    border-bottom: 1px solid #ddd;
+    padding: 0.5rem;
+}
+
+/* Commisies */
+
+.commissies {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1rem;
 }

@@ -9,7 +9,7 @@ export default function Navbar() {
     return (
         <nav className={styles.nav}>
             <div className={styles.links}>
-                <Link href="/">Agenda</Link>
+                <Link href="/">Home</Link>
                 <Link href="/join-us">Join Us!</Link>
             </div>
             <div className={styles.logo}>
