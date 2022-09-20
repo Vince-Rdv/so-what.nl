@@ -84,6 +84,9 @@ export default function Index() {
                         <p>Lijkt het jou nu leuk om een keertje in onze keuken te staan? Stuur dan een mailtje naar eetcafe@so-what.nl</p>
                         <p>Wil je liever minder in de spotlight staan en hou je van live-muziek? We zoeken ook vrijwilligers die ons willen helpen met het koken voor de bands! Elke vrijdag mag jij een gezonde hap neerzetten voor bandleden en techniek. Als jij een act ziet die je helemaal te gek lijkt om samen mee te eten en voor te koken, stuur dan een mailtje naar programmering@so-what.nl</p>
 
+                        <h2>Andere taken</h2>
+                        <p>Denk je nou, koken of tappen lijkt me niks. Maar ik kan wel andere dingen? Laat ons dit weten! Zo zoeken we bijvoorbeeld mensen die het leuk lijken om de magische tosti's in de nacht te bouwen. Stuur een mailtje naar info@so-what.nl</p>
+
                     </div>
 
                     <div className={styles.cta}>
