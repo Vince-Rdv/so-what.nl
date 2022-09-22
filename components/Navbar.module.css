@@ -64,18 +64,41 @@
 }
 
 .mobileButton {
-  display: flex !important;
-  flex-direction: column;
-  justify-content: space-between;
-  min-width: unset !important;
+  display: none;
+  position: relative;
   margin-right: 2rem;
+  outline: none;
+  border: none;
+  background: transparent;
+  width: 2rem !important;
+  height: 2rem !important;
+  min-width: unset !important;
 }
 
 .mobileButton>div {
   width: 100%;
-  height: 0.25rem;
+  height: 0.3rem;
   background: var(--color-blue);
   transition: transform 200ms ease-in-out, opacity 200ms ease-in-out;
+  position: absolute;
+}
+
+.mobileButton>div:nth-child(1) {
+  top: 0px;
+}
+
+.mobileButton>div:nth-child(2) {
+  top: 50%;
+  transform: translateY(-50%)
+}
+
+.mobileButton>div:nth-child(3) {
+  top: 50%;
+  transform: translateY(-50%)
+}
+
+.mobileButton>div:nth-child(4) {
+  bottom: 0px;
 }
 
 .mobileButton:hover {
@@ -94,9 +117,14 @@
   }
 
   .mobileButton {
-    display: flex !important;
-    width: 2rem;
-    height: 1.8rem;
+    display: block;
+  }
+
+  .nav{
+    position: fixed;
+    top:0;
+    z-index:1;
+    width:100%;
   }
 
 }
@@ -154,6 +182,7 @@ nav.nav div.mobileMenu>a:hover, nav.nav div.mobileMenu>a:focus {
   margin-right: 1rem;
   fill: var(--color-white);
 }
+
 /* Smaller than 1000px */
 @media (max-width: 1000px) {
   nav.nav div.mobileMenu {

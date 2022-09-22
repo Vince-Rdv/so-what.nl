@@ -82,6 +82,36 @@
     font-family: var(--font-header);
 }
 
+.stager_container {
+    grid-row: span 2;
+    background: var(--color-white);
+    padding: 0rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.stager_container iframe{
+    width: 100%;
+    height: 100%;
+    border: none;
+    padding: 0;
+}
+
+.stager_container>div{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.ticket_info{
+    padding: 1rem;
+    background: var(--color-white);
+}
+
+
 /* Smaller than 1000px */
 @media screen and (max-width: 1000px) {
     .event {
@@ -107,6 +137,10 @@
     .cta {
         grid-column: span 1;
     }
+
+    .stager_container {
+        grid-column: span 1;
+    }
 }
 
 /* Smaller than 600px */
@@ -130,13 +164,13 @@
 
     .cta p {
         font-size: 1.5rem !important;
-        margin: 0 auto!important;
+        margin: 0 auto !important;
     }
 
     div.cta a {
-        width:60% !important;
-        margin-right:0px !important;
-        margin-left:0px !important;
+        width: 60% !important;
+        margin-right: 0px !important;
+        margin-left: 0px !important;
         margin-bottom: 1rem !important;
         padding: 0.5rem 0 !important;
     }

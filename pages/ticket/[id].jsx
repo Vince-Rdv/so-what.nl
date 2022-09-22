@@ -1,5 +1,5 @@
 import React from 'react';
-import {useRouter} from 'next/router';
+import { useRouter } from 'next/router';
 
 import useSWR from 'swr';
 
@@ -18,7 +18,7 @@ import Footer from '../../components/Footer.jsx';
 export default function Index(props) {
 
     const router = useRouter();
-    const { e } = router.query;
+    const { id } = router.query;
 
     const { data, error } = useSWR('/api/upcommingEvents', fetcher);
 
@@ -31,12 +31,12 @@ export default function Index(props) {
         var eventsData = JSON.parse(data);
         var event;
         for (var i = 0; i < eventsData.length; i++) {
-            if (eventsData[i].id == e) {
+            if (eventsData[i].id == id) {
                 event = eventsData[i];
                 break;
             }
         }
-        if(!event) {
+        if (!event) {
             return null;
         }
 
@@ -50,7 +50,7 @@ export default function Index(props) {
 
         var descriptionTemp = event.publicity.description;
         descriptionTemp = descriptionTemp.split("\n");
-        
+
         var description = [];
         for (var i = 0; i < descriptionTemp.length; i++) {
             description.push(<p>{descriptionTemp[i]}</p>);
@@ -58,20 +58,20 @@ export default function Index(props) {
 
         var ticketText = "";
 
-        for(var x = 0; x < event.tickets.length; x++) {
-            if(event.tickets[x].price > 0){
-                if(ticketText.length > 0){
+        for (var x = 0; x < event.tickets.length; x++) {
+            if (event.tickets[x].price > 0) {
+                if (ticketText.length > 0) {
                     ticketText += " - ";
                 }
                 ticketText += event.tickets[x].name + " €" + (event.tickets[x].price / 100).toFixed(2) + " ";
             }
         }
-        if(ticketText == "") {
+        if (ticketText == "") {
             ticketText = "Gratis";
         }
 
-        var ticketLink = "/tickets/" + event.id;
-        
+        var ticketLink = "/ticket/" + event.id;
+
         return (
             <>
                 <Head>
@@ -91,41 +91,29 @@ export default function Index(props) {
                             <Image layout="fill" objectFit='cover' src={event.publicity.image} alt="Event image" />
                         </div>
 
-                        <div className={styles.text_container}>
-                            <div className={styles.content}>
-                                <h1>{event.publicity.title}</h1>
-                                <h1 className={styles.black}>Donderdag 26 augustus</h1>
-                                <h1>Leeftijd: {leeftijd}</h1>
-                                <h1>Deur open: {deurOpen}</h1>
-                            </div>
+                        <div className={styles.stager_container}>
+
+                            <iframe data-stager-ticketshop="111204925" src="https://so-what.stager.nl/web/tickets/111204925" /> 
+                            {/* ?minimal=true */}
+
+                            {/* <div>
+
+                                <Button text="Verder winkelen" type="black" link="/" />
+                                <Button text="Afrekenen" type="blue" link={ticketLink} />
+
+
+                            </div> */}
+
                         </div>
 
-                        <div className={styles.cta}>
-                            <p>{ticketText}</p>
-                            <Button text="Tickets" link={ticketLink} type="white"/>
-                        </div>
+                        <div className={styles.ticket_info}>
 
-                        <div className={styles.description}>
-                            <div className={styles.content}>
-                                <h2>Beschrijving</h2>
-                                <p>{description}</p>
-                            </div>
-                        </div>
+                            <h1>{event.publicity.title}</h1>
+                            <p>{event.publicity.description}</p>
 
-                        <div className={styles.video}>
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/2intQ4OTv10" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        </div>
-
-                        <div className={styles.info}>
-                            <div className={styles.content}>
-                                <h2>Extra informatie</h2>
-                                <p>Wat hier precies gaat komen weten we nog niet zo zeer. In ieder geval de bekropte versie van de huisregels (denk niet roken enzo). Daarnaast mogelijk wat extra informatie bij speciale evenementen zoals CBI en eetcafe&apos;s</p>
-                            </div>
                         </div>
 
                     </div>
-
-
 
                 </main>
 
