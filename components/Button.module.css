@@ -6,6 +6,7 @@
     min-width:80px;
     text-align: center;
     margin-right:1rem;
+    text-transform: uppercase;
 }
 .blue:last-of-type, .black:last-of-type, .white:last-of-type{
     margin-right:0;

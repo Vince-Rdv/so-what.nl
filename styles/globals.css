@@ -48,3 +48,10 @@ main{
   margin:0 auto;
   margin-top:2rem;
 }
+
+/* Less than 1000px */
+@media (max-width: 1000px) {
+  main{
+    margin-top:130px;
+  }
+}
